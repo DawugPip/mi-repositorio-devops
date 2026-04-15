@@ -28,6 +28,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd /home/ec2-user/mi-repositorio-devops/app
+            cd /home/ubuntu/mi-repositorio-devops/app
             docker compose down
             docker compose up -d --build
